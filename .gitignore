@@ -1,0 +1,6 @@
+.bzr/
+.bzrignore
+.sconsign.dblite
+prog
+prog.hex
+tests/

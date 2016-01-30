@@ -1,0 +1,22 @@
+//moving strings to pgmmem:
+//bss: 1789, data: 398
+//bss: 1787, data: 184
+//bss: 1787, data: 86 :312kb sram saved!
+
+
+//////////////////////
+//BSS SRAM VARIABLES//
+//////////////////////
+
+//these goes to bss(takes no flash memory)
+// i.e stack will have 4096-this to work with ... 
+//run avr-nm look for bss start, end, or avr-size
+
+//note: gcc seems to optimize out = 0 i.e an actual initialized var to a bss ,
+//good for readability of code
+
+//////////////////
+//DATA SRAM VARS//
+//////////////////
+//these go into .data an occupy both flash and sram...
+//char str[] = "const string";
